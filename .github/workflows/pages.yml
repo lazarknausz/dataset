@@ -1,21 +1,21 @@
 name: Deploy to GitHub Pages
 
+# Pages is set to "Deploy from a branch: main", so this builds the static site
+# and commits the output to main. Source code lives on the default branch.
 on:
   push:
-    branches: [main, claude/peaceful-hypatia-tcf2vp]
+    branches: [claude/peaceful-hypatia-tcf2vp]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,16 +26,16 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - run: touch out/.nojekyll # serve _next/ as-is instead of running Jekyll
+      - name: Publish build to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git worktree add site origin/main
+          cd site
+          git rm -rq --ignore-unmatch .
+          cp -r ../out/. .
+          git add -A
+          git commit -qm "Deploy site from ${GITHUB_SHA::7}" || exit 0
+          git push origin HEAD:main
