@@ -36,7 +36,9 @@ export function mergeRealData(series: SeriesPoint[], snap: EurostatSnapshot[stri
       continue;
     }
     const data = snap[FIELD_TO_SNAPSHOT[field]];
-    if (data && Object.keys(data).length) real[field] = Object.fromEntries(Object.entries(data).map(([y, v]) => [+y, v]));
+    // Eurostat reports 0 for tiny or suppressed cells (e.g. division 07); treat as missing rather than a real zero.
+    const positive = data ? Object.entries(data).filter(([, v]) => v > 0).map(([y, v]) => [+y, v] as const) : [];
+    if (positive.length) real[field] = Object.fromEntries(positive);
   }
   const fields = Object.keys(real) as Field[];
   if (!fields.length) return { series };

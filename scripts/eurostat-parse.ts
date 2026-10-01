@@ -38,16 +38,25 @@ export function decode(js: JsonStat): Cell[] {
   return cells;
 }
 
-/** Find the indicator codes (dimension `indic_sb`) by label, since Eurostat has renamed them across SBS revisions. */
+/** Name of the indicator dimension: `indic_sb` (sbs_na_sca_r2, 2008–2020) or `indic_sbs` (sbs_ovw_act, 2021+). */
+export function indicatorDim(js: JsonStat): string {
+  return js.id.find((id) => id === "indic_sb" || id === "indic_sbs") ?? "indic_sb";
+}
+
+/**
+ * Find the indicator codes by label, since Eurostat renamed them between SBS revisions
+ * (e.g. "Turnover or gross premiums written" -> "Net turnover", "Personnel costs" -> "Employee benefits expense").
+ * Only absolute levels count (" - number" / " - million euro"), never ratios, shares or per-head figures.
+ */
 export function findIndicators(js: JsonStat): Partial<Record<"enterprises" | "turnover" | "employees" | "personnelCosts" | "valueAdded", string>> {
-  const labels = js.dimension.indic_sb?.category.label ?? {};
+  const labels = js.dimension[indicatorDim(js)]?.category.label ?? {};
   const find = (re: RegExp) => Object.entries(labels).find(([, l]) => re.test(l))?.[0];
   return {
-    enterprises: find(/^number of enterprises/i),
-    turnover: find(/^turnover/i),
-    employees: find(/^number of persons employed/i),
-    personnelCosts: find(/^personnel costs/i),
-    valueAdded: find(/^value added at factor cost/i),
+    enterprises: find(/^enterprises - number$/i),
+    turnover: find(/^(net turnover|turnover or gross premiums written) - million euro$/i),
+    employees: find(/^persons employed - number$/i),
+    personnelCosts: find(/^(personnel costs|employee benefits expense) - million euro$/i),
+    valueAdded: find(/^value added( at factor cost)? - million euro$/i),
   };
 }
 
@@ -62,7 +71,7 @@ export function collect(js: JsonStat, opts: { unit?: string[] }): Record<string,
   for (const c of decode(js)) {
     if (opts.unit && c.coords.unit && !opts.unit.includes(c.coords.unit)) continue;
     // skip breakdowns other than the total (e.g. size class) when present
-    const extra = Object.entries(c.coords).filter(([k]) => !["freq", "indic_sb", "nace_r2", "geo", "time", "unit"].includes(k));
+    const extra = Object.entries(c.coords).filter(([k]) => !["freq", "indic_sb", "indic_sbs", "nace_r2", "geo", "time", "unit"].includes(k));
     if (extra.some(([, v]) => v !== "TOTAL")) continue;
     const nace = c.coords.nace_r2;
     (out[nace] ??= {})[c.coords.time] = c.value;
