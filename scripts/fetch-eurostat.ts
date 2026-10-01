@@ -11,13 +11,15 @@
 import { writeFileSync } from "node:fs";
 import { DIVISIONS } from "../src/data/divisions";
 import type { EurostatSnapshot, RegionSnapshot } from "../src/lib/types";
-import { collect, decode, eurostatNace, findIndicators, indicatorDim, rates, type JsonStat } from "./eurostat-parse";
+import { collect, decode, eurostatNace, findIndicators, indicatorDim, rollForward, stsIndex, rates, type JsonStat } from "./eurostat-parse";
 
 const BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data";
 const OUT = new URL("../src/data/generated/eurostat-hu.json", import.meta.url);
 const OUT_REGIONS = new URL("../src/data/generated/eurostat-hu-regions.json", import.meta.url);
 const NUTS2 = ["HU11", "HU12", "HU21", "HU22", "HU23", "HU31", "HU32", "HU33"];
 const DATASETS = ["sbs_ovw_act", "sbs_na_sca_r2"]; // 2021+ and 2008–2020
+// Short-term statistics (published sooner than SBS): industry, services and trade net turnover indices.
+const STS_TURNOVER = ["sts_intv_a", "sts_setu_a", "sts_trtu_a"];
 
 async function get(dataset: string, query: string): Promise<JsonStat> {
   const url = `${BASE}/${dataset}?format=JSON&lang=EN&${query}`;
@@ -84,6 +86,21 @@ async function main() {
       merge("personnelCostsBn", toBn(pers[nace]));
       merge("valueAddedBn", toBn(va[nace]));
     }
+  }
+
+  // SBS lags by ~2 years; roll turnover forward to the newest year using the STS turnover index growth.
+  const sbsYear = 2024;
+  for (const dataset of STS_TURNOVER) {
+    const idx = stsIndex(await get(dataset, "geo=HU&indic_bt=NETTUR&s_adj=NSA&unit=I21&sinceTimePeriod=2023"), "NETTUR");
+    const years = new Set(Object.values(idx).flatMap((m) => Object.keys(m).map(Number).filter((y) => y > sbsYear)));
+    for (const toYear of years) {
+      for (const d of DIVISIONS) {
+        const entry = snapshot[d.code];
+        const next = rollForward(entry?.turnoverBn?.[sbsYear], idx[eurostatNace(d.code, d.section)], sbsYear, toYear);
+        if (entry && next !== undefined) (entry.turnoverBn ??= {})[toYear] = Math.round(next * 1000) / 1000;
+      }
+    }
+    console.log(`${dataset}: rolled turnover forward to`, [...years].join(", ") || "(no newer years)");
   }
 
   for (const k of Object.keys(snapshot)) if (!Object.keys(snapshot[k]).length) delete snapshot[k];
