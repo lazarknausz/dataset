@@ -3,6 +3,7 @@ import { SECTION_BY_CODE } from "@/data/sections";
 import { GLOSSARY } from "@/data/glossary";
 import { DRIVERS } from "@/data/drivers";
 import eurostat from "@/data/generated/eurostat-hu.json";
+import eurostatRegions from "@/data/generated/eurostat-hu-regions.json";
 import { cagr } from "./format";
 import { createRng } from "./rng";
 import {
@@ -10,7 +11,7 @@ import {
   placeholderCosts, placeholderMarkets, placeholderProducts, placeholderRegions, placeholderSeries,
   placeholderStructure,
 } from "./placeholder";
-import type { EurostatSnapshot, IndustryReport, Kpi, SeriesPoint, Source } from "./types";
+import type { EurostatSnapshot, Region, RegionSnapshot, IndustryReport, Kpi, SeriesPoint, Source } from "./types";
 
 type Field = "revenueBn" | "employees" | "businesses" | "wagesBn" | "profitBn";
 const FIELD_TO_SNAPSHOT: Record<Field, keyof EurostatSnapshot[string]> = {
@@ -76,7 +77,23 @@ function kpi(key: Kpi["key"], label: string, unit: Kpi["unit"], series: SeriesPo
   return { key, label, unit, value: at(BASE_YEAR), cagrHistoric: hist, cagrForecast: withForecast ? fcst : undefined, source, year };
 }
 
-export function buildReport(code: string, snapshot: EurostatSnapshot = eurostat as EurostatSnapshot): IndustryReport {
+/** Real NUTS-2 split (employment and local-unit shares) when Eurostat has one, else the placeholder split. */
+export function realRegions(code: string, fallback: Region[], snap: RegionSnapshot): Region[] {
+  const entry = snap[code];
+  if (!entry) return fallback;
+  const empTotal = fallback.reduce((a, r) => a + (entry.regions[r.nuts]?.employees ?? 0), 0);
+  const unitTotal = fallback.reduce((a, r) => a + (entry.regions[r.nuts]?.localUnits ?? 0), 0);
+  if (!(empTotal > 0 && unitTotal > 0)) return fallback;
+  return fallback.map((r) => ({
+    ...r,
+    share: ((entry.regions[r.nuts]?.employees ?? 0) / empTotal) * 100,
+    businessShare: ((entry.regions[r.nuts]?.localUnits ?? 0) / unitTotal) * 100,
+    source: "eurostat" as const,
+    year: entry.year,
+  }));
+}
+
+export function buildReport(code: string, snapshot: EurostatSnapshot = eurostat as EurostatSnapshot, regionSnapshot: RegionSnapshot = eurostatRegions as RegionSnapshot): IndustryReport {
   const division = DIVISION_BY_CODE[code];
   if (!division) throw new Error(`Unknown TEÁOR division: ${code}`);
   const section = SECTION_BY_CODE[division.section];
@@ -139,7 +156,7 @@ export function buildReport(code: string, snapshot: EurostatSnapshot = eurostat 
     series,
     products: placeholderProducts(division, section, cur.revenueBn),
     markets: placeholderMarkets(division, section, cur.revenueBn),
-    regions: placeholderRegions(division, section),
+    regions: realRegions(code, placeholderRegions(division, section), regionSnapshot),
     structure,
     drivers: DRIVERS[section.code] ?? [],
     swot: {

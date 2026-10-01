@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { collect, decode, findIndicators, rates, type JsonStat } from "../scripts/eurostat-parse";
+import { collect, decode, findIndicators, rates, rollForward, stsIndex, type JsonStat } from "../scripts/eurostat-parse";
 
 const mock: JsonStat = {
   id: ["freq", "indic_sb", "unit", "nace_r2", "geo", "time"],
@@ -44,5 +44,22 @@ describe("eurostat parsing", () => {
       value: [390.9, 4.69],
     };
     expect(rates(fx)).toEqual({ "2022": 390.9 });
+  });
+
+  it("rolls an SBS level forward with the STS index growth", () => {
+    const js: JsonStat = {
+      id: ["indic_bt", "s_adj", "unit", "nace_r2", "time"], size: [1, 2, 1, 1, 2],
+      dimension: {
+        indic_bt: { category: { index: { NETTUR: 0 } } }, s_adj: { category: { index: { NSA: 0, CA: 1 } } },
+        unit: { category: { index: { I21: 0 } } }, nace_r2: { category: { index: { C10: 0 } } },
+        time: { category: { index: { "2024": 0, "2025": 1 } } },
+      },
+      value: [100, 110, 90, 99],
+    };
+    const idx = stsIndex(js, "NETTUR");
+    expect(idx).toEqual({ C10: { "2024": 100, "2025": 110 } });
+    expect(rollForward(200, idx.C10, 2024, 2025)).toBeCloseTo(220);
+    expect(rollForward(200, { "2024": 0, "2025": 5 }, 2024, 2025)).toBeUndefined();
+    expect(rollForward(undefined, idx.C10, 2024, 2025)).toBeUndefined();
   });
 });

@@ -85,3 +85,24 @@ export function rates(js: JsonStat): Record<string, number> {
   for (const c of decode(js)) if (c.coords.currency === "HUF") out[c.coords.time] = c.value;
   return out;
 }
+
+/**
+ * Index series (2021=100, not seasonally adjusted) from a short-term business statistics dataset
+ * (sts_*_a): nace code -> year -> index. These are published sooner than SBS, so they are used to roll
+ * the latest SBS level forward to the newest year.
+ */
+export function stsIndex(js: JsonStat, indicator: string): Record<string, Record<string, number>> {
+  const out: Record<string, Record<string, number>> = {};
+  for (const c of decode(js)) {
+    if (c.coords.indic_bt !== indicator || c.coords.s_adj !== "NSA" || c.coords.unit !== "I21") continue;
+    (out[c.coords.nace_r2] ??= {})[c.coords.time] = c.value;
+  }
+  return out;
+}
+
+/** Roll `latest` (a real level for `fromYear`) forward to `toYear` using the index growth; undefined if the index is missing or zero. */
+export function rollForward(latest: number | undefined, index: Record<string, number> | undefined, fromYear: number, toYear: number): number | undefined {
+  const a = index?.[fromYear], b = index?.[toYear];
+  if (latest === undefined || !a || !b || a <= 0 || b <= 0) return undefined;
+  return latest * (b / a);
+}

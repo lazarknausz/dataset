@@ -51,3 +51,17 @@ describe("cagr", () => {
     expect(cagr(0, 10, 2)).toBe(0);
   });
 });
+
+describe("real regional data", () => {
+  const nuts = ["HU11", "HU12", "HU21", "HU22", "HU23", "HU31", "HU32", "HU33"];
+  const snap = { "10": { year: 2020, regions: Object.fromEntries(nuts.map((n, i) => [n, { employees: 100 * (i + 1), localUnits: 10 }])) } };
+  it("uses Eurostat shares when available", () => {
+    const r = buildReport("10", {}, snap).regions;
+    expect(r[0].source).toBe("eurostat");
+    expect(r[0].share).toBeCloseTo((100 / 3600) * 100);
+    expect(r.reduce((a, g) => a + g.businessShare, 0)).toBeCloseTo(100);
+  });
+  it("falls back to placeholders without data", () => {
+    expect(buildReport("11", {}, snap).regions[0].source).toBeUndefined();
+  });
+});

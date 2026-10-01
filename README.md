@@ -3,8 +3,9 @@
 Industry research for the **Hungarian market only** — an IBISWorld-style report for each of the 88 TEÁOR'08 (NACE Rev.2)
 divisions, grouped into 21 sections (A–U). Built with Next.js (App Router, static export), TypeScript, Tailwind CSS 4 and Recharts.
 
-> **Data status:** all numbers are deterministic *placeholders* (HUF) and company names are fictional. Every figure carries a
-> source badge ("Estimate" vs "Eurostat SBS") so real data can replace it without UI changes.
+> **Data status:** revenue, employment, businesses, wages and profit history (2008–2024) and the NUTS-2 regional split are real
+> Eurostat data (80 of 88 divisions; 63 with regional data). Forecasts, product/market splits, cost mix and the Major Players table
+> are deterministic *placeholders* (company names are fictional) and are badged "Estimate".
 
 ## Run
 
@@ -24,7 +25,7 @@ External Environment (drivers + SWOT) · Financial Benchmarks · Key Statistics.
 ## Layout
 - `src/data/` — sections, divisions (HU/EN names, related industries), glossary, external drivers
 - `src/lib/placeholder.ts` — seeded generators; `src/lib/report.ts` — `buildReport(code)` merges real data over placeholders
-- `src/data/generated/eurostat-hu.json` — real-data snapshot (currently empty `{}`)
+- `src/data/generated/eurostat-hu.json` — real-data snapshot and `eurostat-hu-regions.json` — real-data snapshots (national SBS series; latest NUTS-2 employment/local-unit split)
 - `scripts/fetch-eurostat.ts` — pulls Hungarian SBS data (turnover, employees, enterprises, personnel costs, value added) and converts EUR→HUF
 
 ## Loading real data
