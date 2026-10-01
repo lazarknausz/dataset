@@ -1,0 +1,2333 @@
+{
+ "10": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 11395,
+    "localUnits": 785
+   },
+   "HU12": {
+    "employees": 12909,
+    "localUnits": 831
+   },
+   "HU21": {
+    "employees": 9553,
+    "localUnits": 424
+   },
+   "HU22": {
+    "employees": 7862,
+    "localUnits": 432
+   },
+   "HU23": {
+    "employees": 8080,
+    "localUnits": 397
+   },
+   "HU31": {
+    "employees": 5822,
+    "localUnits": 375
+   },
+   "HU32": {
+    "employees": 16216,
+    "localUnits": 686
+   },
+   "HU33": {
+    "employees": 23923,
+    "localUnits": 817
+   }
+  }
+ },
+ "11": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 2909,
+    "localUnits": 169
+   },
+   "HU12": {
+    "employees": 1987,
+    "localUnits": 194
+   },
+   "HU21": {
+    "employees": 993,
+    "localUnits": 303
+   },
+   "HU22": {
+    "employees": 1019,
+    "localUnits": 171
+   },
+   "HU23": {
+    "employees": 1588,
+    "localUnits": 379
+   },
+   "HU31": {
+    "employees": 2658,
+    "localUnits": 433
+   },
+   "HU32": {
+    "employees": 693,
+    "localUnits": 233
+   },
+   "HU33": {
+    "employees": 2097,
+    "localUnits": 339
+   }
+  }
+ },
+ "13": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 1329,
+    "localUnits": 330
+   },
+   "HU12": {
+    "employees": 537,
+    "localUnits": 213
+   },
+   "HU21": {
+    "employees": 1103,
+    "localUnits": 159
+   },
+   "HU22": {
+    "employees": 1276,
+    "localUnits": 189
+   },
+   "HU23": {
+    "employees": 882,
+    "localUnits": 135
+   },
+   "HU31": {
+    "employees": 507,
+    "localUnits": 121
+   },
+   "HU32": {
+    "employees": 1038,
+    "localUnits": 126
+   },
+   "HU33": {
+    "employees": 1665,
+    "localUnits": 189
+   }
+  }
+ },
+ "14": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 6987,
+    "localUnits": 739
+   },
+   "HU12": {
+    "employees": 1221,
+    "localUnits": 460
+   },
+   "HU21": {
+    "employees": 991,
+    "localUnits": 300
+   },
+   "HU22": {
+    "employees": 2627,
+    "localUnits": 355
+   },
+   "HU23": {
+    "employees": 1503,
+    "localUnits": 258
+   },
+   "HU31": {
+    "employees": 1002,
+    "localUnits": 223
+   },
+   "HU32": {
+    "employees": 4629,
+    "localUnits": 375
+   },
+   "HU33": {
+    "employees": 2937,
+    "localUnits": 341
+   }
+  }
+ },
+ "15": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 284,
+    "localUnits": 110
+   },
+   "HU12": {
+    "employees": 194,
+    "localUnits": 71
+   },
+   "HU21": {
+    "employees": 204,
+    "localUnits": 44
+   },
+   "HU22": {
+    "employees": 1182,
+    "localUnits": 58
+   },
+   "HU23": {
+    "employees": 1677,
+    "localUnits": 71
+   },
+   "HU31": {
+    "employees": 554,
+    "localUnits": 27
+   },
+   "HU32": {
+    "employees": 4527,
+    "localUnits": 98
+   },
+   "HU33": {
+    "employees": 864,
+    "localUnits": 59
+   }
+  }
+ },
+ "16": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 1258,
+    "localUnits": 295
+   },
+   "HU12": {
+    "employees": 2274,
+    "localUnits": 531
+   },
+   "HU21": {
+    "employees": 1717,
+    "localUnits": 432
+   },
+   "HU22": {
+    "employees": 4279,
+    "localUnits": 509
+   },
+   "HU23": {
+    "employees": 1878,
+    "localUnits": 390
+   },
+   "HU31": {
+    "employees": 1084,
+    "localUnits": 339
+   },
+   "HU32": {
+    "employees": 2648,
+    "localUnits": 450
+   },
+   "HU33": {
+    "employees": 2127,
+    "localUnits": 438
+   }
+  }
+ },
+ "17": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 5140,
+    "localUnits": 114
+   },
+   "HU12": {
+    "employees": 3965,
+    "localUnits": 99
+   },
+   "HU21": {
+    "employees": 2888,
+    "localUnits": 69
+   },
+   "HU22": {
+    "employees": 539,
+    "localUnits": 38
+   },
+   "HU23": {
+    "employees": 260,
+    "localUnits": 26
+   },
+   "HU31": {
+    "employees": 701,
+    "localUnits": 43
+   },
+   "HU32": {
+    "employees": 2640,
+    "localUnits": 51
+   },
+   "HU33": {
+    "employees": 2020,
+    "localUnits": 61
+   }
+  }
+ },
+ "18": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 8777,
+    "localUnits": 1307
+   },
+   "HU12": {
+    "employees": 1837,
+    "localUnits": 543
+   },
+   "HU21": {
+    "employees": 672,
+    "localUnits": 179
+   },
+   "HU22": {
+    "employees": 747,
+    "localUnits": 175
+   },
+   "HU23": {
+    "employees": 539,
+    "localUnits": 148
+   },
+   "HU31": {
+    "employees": 621,
+    "localUnits": 171
+   },
+   "HU32": {
+    "employees": 1650,
+    "localUnits": 212
+   },
+   "HU33": {
+    "employees": 1625,
+    "localUnits": 251
+   }
+  }
+ },
+ "20": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 3828,
+    "localUnits": 191
+   },
+   "HU12": {
+    "employees": 1131,
+    "localUnits": 120
+   },
+   "HU21": {
+    "employees": 2598,
+    "localUnits": 80
+   },
+   "HU22": {
+    "employees": 834,
+    "localUnits": 44
+   },
+   "HU23": {
+    "employees": 446,
+    "localUnits": 55
+   },
+   "HU31": {
+    "employees": 4235,
+    "localUnits": 57
+   },
+   "HU32": {
+    "employees": 1301,
+    "localUnits": 70
+   },
+   "HU33": {
+    "employees": 1171,
+    "localUnits": 86
+   }
+  }
+ },
+ "21": {
+  "year": 2017,
+  "regions": {
+   "HU11": {
+    "employees": 10099,
+    "localUnits": 56
+   },
+   "HU12": {
+    "employees": 1516,
+    "localUnits": 21
+   },
+   "HU21": {
+    "employees": 1032,
+    "localUnits": 4
+   },
+   "HU22": {
+    "employees": 689,
+    "localUnits": 5
+   },
+   "HU23": {
+    "employees": 172,
+    "localUnits": 9
+   },
+   "HU31": {
+    "employees": 722,
+    "localUnits": 16
+   },
+   "HU32": {
+    "employees": 2680,
+    "localUnits": 13
+   },
+   "HU33": {
+    "employees": 306,
+    "localUnits": 13
+   }
+  }
+ },
+ "22": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 4611,
+    "localUnits": 315
+   },
+   "HU12": {
+    "employees": 5506,
+    "localUnits": 387
+   },
+   "HU21": {
+    "employees": 14559,
+    "localUnits": 221
+   },
+   "HU22": {
+    "employees": 8232,
+    "localUnits": 198
+   },
+   "HU23": {
+    "employees": 2827,
+    "localUnits": 136
+   },
+   "HU31": {
+    "employees": 4219,
+    "localUnits": 147
+   },
+   "HU32": {
+    "employees": 8810,
+    "localUnits": 207
+   },
+   "HU33": {
+    "employees": 7721,
+    "localUnits": 255
+   }
+  }
+ },
+ "23": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 3169,
+    "localUnits": 341
+   },
+   "HU12": {
+    "employees": 4503,
+    "localUnits": 346
+   },
+   "HU21": {
+    "employees": 5624,
+    "localUnits": 304
+   },
+   "HU22": {
+    "employees": 4165,
+    "localUnits": 249
+   },
+   "HU23": {
+    "employees": 1480,
+    "localUnits": 220
+   },
+   "HU31": {
+    "employees": 1436,
+    "localUnits": 226
+   },
+   "HU32": {
+    "employees": 860,
+    "localUnits": 243
+   },
+   "HU33": {
+    "employees": 3449,
+    "localUnits": 237
+   }
+  }
+ },
+ "24": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 2205,
+    "localUnits": 62
+   },
+   "HU12": {
+    "employees": 1248,
+    "localUnits": 55
+   },
+   "HU21": {
+    "employees": 9800,
+    "localUnits": 38
+   },
+   "HU22": {
+    "employees": 912,
+    "localUnits": 24
+   },
+   "HU23": {
+    "employees": 314,
+    "localUnits": 11
+   },
+   "HU31": {
+    "employees": 1649,
+    "localUnits": 37
+   },
+   "HU32": {
+    "employees": 979,
+    "localUnits": 20
+   },
+   "HU33": {
+    "employees": 1368,
+    "localUnits": 18
+   }
+  }
+ },
+ "25": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 9682,
+    "localUnits": 1359
+   },
+   "HU12": {
+    "employees": 12502,
+    "localUnits": 1436
+   },
+   "HU21": {
+    "employees": 10719,
+    "localUnits": 1467
+   },
+   "HU22": {
+    "employees": 9413,
+    "localUnits": 1104
+   },
+   "HU23": {
+    "employees": 7662,
+    "localUnits": 839
+   },
+   "HU31": {
+    "employees": 12052,
+    "localUnits": 1047
+   },
+   "HU32": {
+    "employees": 10655,
+    "localUnits": 1226
+   },
+   "HU33": {
+    "employees": 9840,
+    "localUnits": 1232
+   }
+  }
+ },
+ "26": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 6052,
+    "localUnits": 519
+   },
+   "HU12": {
+    "employees": 7423,
+    "localUnits": 265
+   },
+   "HU21": {
+    "employees": 8560,
+    "localUnits": 125
+   },
+   "HU22": {
+    "employees": 1962,
+    "localUnits": 89
+   },
+   "HU23": {
+    "employees": 7899,
+    "localUnits": 63
+   },
+   "HU31": {
+    "employees": 9415,
+    "localUnits": 72
+   },
+   "HU32": {
+    "employees": 6968,
+    "localUnits": 81
+   },
+   "HU33": {
+    "employees": 1344,
+    "localUnits": 128
+   }
+  }
+ },
+ "27": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 11021,
+    "localUnits": 271
+   },
+   "HU12": {
+    "employees": 6954,
+    "localUnits": 142
+   },
+   "HU21": {
+    "employees": 13782,
+    "localUnits": 137
+   },
+   "HU22": {
+    "employees": 5102,
+    "localUnits": 75
+   },
+   "HU23": {
+    "employees": 5480,
+    "localUnits": 78
+   },
+   "HU31": {
+    "employees": 3006,
+    "localUnits": 68
+   },
+   "HU32": {
+    "employees": 4429,
+    "localUnits": 65
+   },
+   "HU33": {
+    "employees": 4027,
+    "localUnits": 94
+   }
+  }
+ },
+ "28": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 6407,
+    "localUnits": 512
+   },
+   "HU12": {
+    "employees": 4466,
+    "localUnits": 363
+   },
+   "HU21": {
+    "employees": 11781,
+    "localUnits": 269
+   },
+   "HU22": {
+    "employees": 7518,
+    "localUnits": 252
+   },
+   "HU23": {
+    "employees": 2676,
+    "localUnits": 154
+   },
+   "HU31": {
+    "employees": 7800,
+    "localUnits": 204
+   },
+   "HU32": {
+    "employees": 7149,
+    "localUnits": 260
+   },
+   "HU33": {
+    "employees": 8281,
+    "localUnits": 308
+   }
+  }
+ },
+ "29": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 3652,
+    "localUnits": 63
+   },
+   "HU12": {
+    "employees": 8891,
+    "localUnits": 98
+   },
+   "HU21": {
+    "employees": 27135,
+    "localUnits": 102
+   },
+   "HU22": {
+    "employees": 33970,
+    "localUnits": 69
+   },
+   "HU23": {
+    "employees": 2132,
+    "localUnits": 40
+   },
+   "HU31": {
+    "employees": 12384,
+    "localUnits": 34
+   },
+   "HU32": {
+    "employees": 2462,
+    "localUnits": 39
+   },
+   "HU33": {
+    "employees": 8689,
+    "localUnits": 74
+   }
+  }
+ },
+ "30": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 2638,
+    "localUnits": 78
+   },
+   "HU12": {
+    "employees": 356,
+    "localUnits": 38
+   },
+   "HU21": {
+    "employees": 589,
+    "localUnits": 39
+   },
+   "HU22": {
+    "employees": 89,
+    "localUnits": 15
+   },
+   "HU23": {
+    "employees": 90,
+    "localUnits": 21
+   },
+   "HU31": {
+    "employees": 825,
+    "localUnits": 9
+   },
+   "HU32": {
+    "employees": 2788,
+    "localUnits": 17
+   },
+   "HU33": {
+    "employees": 337,
+    "localUnits": 21
+   }
+  }
+ },
+ "31": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 2036,
+    "localUnits": 569
+   },
+   "HU12": {
+    "employees": 1772,
+    "localUnits": 628
+   },
+   "HU21": {
+    "employees": 2841,
+    "localUnits": 456
+   },
+   "HU22": {
+    "employees": 5658,
+    "localUnits": 500
+   },
+   "HU23": {
+    "employees": 810,
+    "localUnits": 241
+   },
+   "HU31": {
+    "employees": 1092,
+    "localUnits": 245
+   },
+   "HU32": {
+    "employees": 1683,
+    "localUnits": 386
+   },
+   "HU33": {
+    "employees": 2323,
+    "localUnits": 333
+   }
+  }
+ },
+ "32": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 5330,
+    "localUnits": 1345
+   },
+   "HU12": {
+    "employees": 3269,
+    "localUnits": 801
+   },
+   "HU21": {
+    "employees": 2155,
+    "localUnits": 587
+   },
+   "HU22": {
+    "employees": 2197,
+    "localUnits": 693
+   },
+   "HU23": {
+    "employees": 1593,
+    "localUnits": 453
+   },
+   "HU31": {
+    "employees": 1507,
+    "localUnits": 429
+   },
+   "HU32": {
+    "employees": 6462,
+    "localUnits": 657
+   },
+   "HU33": {
+    "employees": 2412,
+    "localUnits": 696
+   }
+  }
+ },
+ "33": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 8483,
+    "localUnits": 1399
+   },
+   "HU12": {
+    "employees": 4591,
+    "localUnits": 1165
+   },
+   "HU21": {
+    "employees": 2812,
+    "localUnits": 1099
+   },
+   "HU22": {
+    "employees": 2954,
+    "localUnits": 916
+   },
+   "HU23": {
+    "employees": 1249,
+    "localUnits": 627
+   },
+   "HU31": {
+    "employees": 1900,
+    "localUnits": 646
+   },
+   "HU32": {
+    "employees": 3090,
+    "localUnits": 956
+   },
+   "HU33": {
+    "employees": 2672,
+    "localUnits": 933
+   }
+  }
+ },
+ "35": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 11526,
+    "localUnits": 485
+   },
+   "HU12": {
+    "employees": 1228,
+    "localUnits": 175
+   },
+   "HU21": {
+    "employees": 1979,
+    "localUnits": 104
+   },
+   "HU22": {
+    "employees": 3039,
+    "localUnits": 109
+   },
+   "HU23": {
+    "employees": 6692,
+    "localUnits": 173
+   },
+   "HU31": {
+    "employees": 3984,
+    "localUnits": 130
+   },
+   "HU32": {
+    "employees": 2597,
+    "localUnits": 196
+   },
+   "HU33": {
+    "employees": 1775,
+    "localUnits": 181
+   }
+  }
+ },
+ "36": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 1728,
+    "localUnits": 25
+   },
+   "HU12": {
+    "employees": 2221,
+    "localUnits": 27
+   },
+   "HU21": {
+    "employees": 1945,
+    "localUnits": 18
+   },
+   "HU22": {
+    "employees": 2262,
+    "localUnits": 29
+   },
+   "HU23": {
+    "employees": 2940,
+    "localUnits": 18
+   },
+   "HU31": {
+    "employees": 2208,
+    "localUnits": 20
+   },
+   "HU32": {
+    "employees": 4153,
+    "localUnits": 38
+   },
+   "HU33": {
+    "employees": 1942,
+    "localUnits": 27
+   }
+  }
+ },
+ "37": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 1220,
+    "localUnits": 60
+   },
+   "HU12": {
+    "employees": 371,
+    "localUnits": 94
+   },
+   "HU21": {
+    "employees": 165,
+    "localUnits": 62
+   },
+   "HU22": {
+    "employees": 101,
+    "localUnits": 44
+   },
+   "HU23": {
+    "employees": 88,
+    "localUnits": 53
+   },
+   "HU31": {
+    "employees": 2150,
+    "localUnits": 67
+   },
+   "HU32": {
+    "employees": 184,
+    "localUnits": 49
+   },
+   "HU33": {
+    "employees": 1340,
+    "localUnits": 60
+   }
+  }
+ },
+ "38": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 5158,
+    "localUnits": 192
+   },
+   "HU12": {
+    "employees": 2852,
+    "localUnits": 185
+   },
+   "HU21": {
+    "employees": 2153,
+    "localUnits": 122
+   },
+   "HU22": {
+    "employees": 1904,
+    "localUnits": 90
+   },
+   "HU23": {
+    "employees": 2692,
+    "localUnits": 81
+   },
+   "HU31": {
+    "employees": 1812,
+    "localUnits": 80
+   },
+   "HU32": {
+    "employees": 2462,
+    "localUnits": 101
+   },
+   "HU33": {
+    "employees": 2946,
+    "localUnits": 135
+   }
+  }
+ },
+ "39": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 279,
+    "localUnits": 40
+   },
+   "HU12": {
+    "employees": 52,
+    "localUnits": 23
+   },
+   "HU21": {
+    "employees": 114,
+    "localUnits": 13
+   },
+   "HU22": {
+    "employees": 65,
+    "localUnits": 11
+   },
+   "HU23": {
+    "employees": 41,
+    "localUnits": 9
+   },
+   "HU31": {
+    "employees": 46,
+    "localUnits": 8
+   },
+   "HU32": {
+    "employees": 315,
+    "localUnits": 12
+   },
+   "HU33": {
+    "employees": 58,
+    "localUnits": 16
+   }
+  }
+ },
+ "41": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 23162,
+    "localUnits": 4859
+   },
+   "HU12": {
+    "employees": 11160,
+    "localUnits": 3329
+   },
+   "HU21": {
+    "employees": 7528,
+    "localUnits": 2147
+   },
+   "HU22": {
+    "employees": 6741,
+    "localUnits": 1839
+   },
+   "HU23": {
+    "employees": 5950,
+    "localUnits": 1732
+   },
+   "HU31": {
+    "employees": 6548,
+    "localUnits": 1673
+   },
+   "HU32": {
+    "employees": 9853,
+    "localUnits": 2421
+   },
+   "HU33": {
+    "employees": 10609,
+    "localUnits": 2044
+   }
+  }
+ },
+ "42": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 11306,
+    "localUnits": 1179
+   },
+   "HU12": {
+    "employees": 6569,
+    "localUnits": 1011
+   },
+   "HU21": {
+    "employees": 3514,
+    "localUnits": 585
+   },
+   "HU22": {
+    "employees": 3432,
+    "localUnits": 455
+   },
+   "HU23": {
+    "employees": 2926,
+    "localUnits": 413
+   },
+   "HU31": {
+    "employees": 3042,
+    "localUnits": 515
+   },
+   "HU32": {
+    "employees": 5821,
+    "localUnits": 751
+   },
+   "HU33": {
+    "employees": 5860,
+    "localUnits": 560
+   }
+  }
+ },
+ "43": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 30655,
+    "localUnits": 10742
+   },
+   "HU12": {
+    "employees": 26220,
+    "localUnits": 12797
+   },
+   "HU21": {
+    "employees": 19170,
+    "localUnits": 10731
+   },
+   "HU22": {
+    "employees": 17493,
+    "localUnits": 10088
+   },
+   "HU23": {
+    "employees": 13650,
+    "localUnits": 7227
+   },
+   "HU31": {
+    "employees": 13307,
+    "localUnits": 6378
+   },
+   "HU32": {
+    "employees": 18880,
+    "localUnits": 9510
+   },
+   "HU33": {
+    "employees": 18317,
+    "localUnits": 9284
+   }
+  }
+ },
+ "45": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 20912,
+    "localUnits": 4880
+   },
+   "HU12": {
+    "employees": 14325,
+    "localUnits": 4554
+   },
+   "HU21": {
+    "employees": 8034,
+    "localUnits": 2814
+   },
+   "HU22": {
+    "employees": 7879,
+    "localUnits": 2784
+   },
+   "HU23": {
+    "employees": 5970,
+    "localUnits": 2119
+   },
+   "HU31": {
+    "employees": 5203,
+    "localUnits": 2151
+   },
+   "HU32": {
+    "employees": 9195,
+    "localUnits": 3418
+   },
+   "HU33": {
+    "employees": 9198,
+    "localUnits": 3304
+   }
+  }
+ },
+ "46": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 64260,
+    "localUnits": 11904
+   },
+   "HU12": {
+    "employees": 30414,
+    "localUnits": 4870
+   },
+   "HU21": {
+    "employees": 12161,
+    "localUnits": 2540
+   },
+   "HU22": {
+    "employees": 11940,
+    "localUnits": 2471
+   },
+   "HU23": {
+    "employees": 9350,
+    "localUnits": 2116
+   },
+   "HU31": {
+    "employees": 9915,
+    "localUnits": 1948
+   },
+   "HU32": {
+    "employees": 19031,
+    "localUnits": 3448
+   },
+   "HU33": {
+    "employees": 19704,
+    "localUnits": 3799
+   }
+  }
+ },
+ "47": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 77666,
+    "localUnits": 19370
+   },
+   "HU12": {
+    "employees": 48436,
+    "localUnits": 12039
+   },
+   "HU21": {
+    "employees": 31331,
+    "localUnits": 8930
+   },
+   "HU22": {
+    "employees": 30877,
+    "localUnits": 8918
+   },
+   "HU23": {
+    "employees": 23760,
+    "localUnits": 8074
+   },
+   "HU31": {
+    "employees": 27685,
+    "localUnits": 8908
+   },
+   "HU32": {
+    "employees": 39796,
+    "localUnits": 13622
+   },
+   "HU33": {
+    "employees": 37882,
+    "localUnits": 12105
+   }
+  }
+ },
+ "49": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 68621,
+    "localUnits": 6010
+   },
+   "HU12": {
+    "employees": 18634,
+    "localUnits": 4546
+   },
+   "HU21": {
+    "employees": 14024,
+    "localUnits": 2911
+   },
+   "HU22": {
+    "employees": 13516,
+    "localUnits": 2518
+   },
+   "HU23": {
+    "employees": 5800,
+    "localUnits": 1982
+   },
+   "HU31": {
+    "employees": 7942,
+    "localUnits": 2107
+   },
+   "HU32": {
+    "employees": 11657,
+    "localUnits": 3002
+   },
+   "HU33": {
+    "employees": 11073,
+    "localUnits": 2796
+   }
+  }
+ },
+ "50": {
+  "year": 2019,
+  "regions": {
+   "HU11": {
+    "employees": 371,
+    "localUnits": 46
+   },
+   "HU12": {
+    "employees": 61,
+    "localUnits": 23
+   },
+   "HU21": {
+    "employees": 84,
+    "localUnits": 28
+   },
+   "HU22": {
+    "employees": 11,
+    "localUnits": 9
+   },
+   "HU23": {
+    "employees": 292,
+    "localUnits": 25
+   },
+   "HU31": {
+    "employees": 9,
+    "localUnits": 7
+   },
+   "HU32": {
+    "employees": 13,
+    "localUnits": 9
+   },
+   "HU33": {
+    "employees": 56,
+    "localUnits": 12
+   }
+  }
+ },
+ "51": {
+  "year": 2019,
+  "regions": {
+   "HU11": {
+    "employees": 1214,
+    "localUnits": 46
+   },
+   "HU12": {
+    "employees": 134,
+    "localUnits": 20
+   },
+   "HU21": {
+    "employees": 23,
+    "localUnits": 9
+   },
+   "HU22": {
+    "employees": 7,
+    "localUnits": 4
+   },
+   "HU23": {
+    "employees": 28,
+    "localUnits": 9
+   },
+   "HU31": {
+    "employees": 3,
+    "localUnits": 3
+   },
+   "HU32": {
+    "employees": 10,
+    "localUnits": 3
+   },
+   "HU33": {
+    "employees": 16,
+    "localUnits": 8
+   }
+  }
+ },
+ "52": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 38779,
+    "localUnits": 1487
+   },
+   "HU12": {
+    "employees": 10439,
+    "localUnits": 1002
+   },
+   "HU21": {
+    "employees": 1595,
+    "localUnits": 444
+   },
+   "HU22": {
+    "employees": 4259,
+    "localUnits": 468
+   },
+   "HU23": {
+    "employees": 702,
+    "localUnits": 287
+   },
+   "HU31": {
+    "employees": 1533,
+    "localUnits": 312
+   },
+   "HU32": {
+    "employees": 2162,
+    "localUnits": 491
+   },
+   "HU33": {
+    "employees": 2591,
+    "localUnits": 483
+   }
+  }
+ },
+ "53": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 31255,
+    "localUnits": 2458
+   },
+   "HU12": {
+    "employees": 2228,
+    "localUnits": 854
+   },
+   "HU21": {
+    "employees": 573,
+    "localUnits": 339
+   },
+   "HU22": {
+    "employees": 688,
+    "localUnits": 416
+   },
+   "HU23": {
+    "employees": 490,
+    "localUnits": 277
+   },
+   "HU31": {
+    "employees": 625,
+    "localUnits": 275
+   },
+   "HU32": {
+    "employees": 780,
+    "localUnits": 535
+   },
+   "HU33": {
+    "employees": 510,
+    "localUnits": 304
+   }
+  }
+ },
+ "55": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 8646,
+    "localUnits": 1428
+   },
+   "HU12": {
+    "employees": 1373,
+    "localUnits": 397
+   },
+   "HU21": {
+    "employees": 3040,
+    "localUnits": 676
+   },
+   "HU22": {
+    "employees": 4481,
+    "localUnits": 796
+   },
+   "HU23": {
+    "employees": 2286,
+    "localUnits": 723
+   },
+   "HU31": {
+    "employees": 2563,
+    "localUnits": 693
+   },
+   "HU32": {
+    "employees": 2563,
+    "localUnits": 613
+   },
+   "HU33": {
+    "employees": 1604,
+    "localUnits": 457
+   }
+  }
+ },
+ "56": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 33565,
+    "localUnits": 6646
+   },
+   "HU12": {
+    "employees": 11908,
+    "localUnits": 3178
+   },
+   "HU21": {
+    "employees": 10210,
+    "localUnits": 3116
+   },
+   "HU22": {
+    "employees": 11435,
+    "localUnits": 3294
+   },
+   "HU23": {
+    "employees": 8905,
+    "localUnits": 2851
+   },
+   "HU31": {
+    "employees": 7712,
+    "localUnits": 2668
+   },
+   "HU32": {
+    "employees": 10543,
+    "localUnits": 3303
+   },
+   "HU33": {
+    "employees": 12867,
+    "localUnits": 3554
+   }
+  }
+ },
+ "58": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 9441,
+    "localUnits": 1626
+   },
+   "HU12": {
+    "employees": 911,
+    "localUnits": 474
+   },
+   "HU21": {
+    "employees": 355,
+    "localUnits": 194
+   },
+   "HU22": {
+    "employees": 433,
+    "localUnits": 193
+   },
+   "HU23": {
+    "employees": 288,
+    "localUnits": 173
+   },
+   "HU31": {
+    "employees": 216,
+    "localUnits": 144
+   },
+   "HU32": {
+    "employees": 421,
+    "localUnits": 201
+   },
+   "HU33": {
+    "employees": 548,
+    "localUnits": 259
+   }
+  }
+ },
+ "59": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 6823,
+    "localUnits": 4521
+   },
+   "HU12": {
+    "employees": 1778,
+    "localUnits": 1424
+   },
+   "HU21": {
+    "employees": 438,
+    "localUnits": 391
+   },
+   "HU22": {
+    "employees": 339,
+    "localUnits": 282
+   },
+   "HU23": {
+    "employees": 310,
+    "localUnits": 270
+   },
+   "HU31": {
+    "employees": 379,
+    "localUnits": 314
+   },
+   "HU32": {
+    "employees": 357,
+    "localUnits": 309
+   },
+   "HU33": {
+    "employees": 463,
+    "localUnits": 363
+   }
+  }
+ },
+ "60": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 1922,
+    "localUnits": 224
+   },
+   "HU12": {
+    "employees": 127,
+    "localUnits": 87
+   },
+   "HU21": {
+    "employees": 89,
+    "localUnits": 52
+   },
+   "HU22": {
+    "employees": 118,
+    "localUnits": 43
+   },
+   "HU23": {
+    "employees": 106,
+    "localUnits": 76
+   },
+   "HU31": {
+    "employees": 96,
+    "localUnits": 58
+   },
+   "HU32": {
+    "employees": 219,
+    "localUnits": 79
+   },
+   "HU33": {
+    "employees": 278,
+    "localUnits": 99
+   }
+  }
+ },
+ "61": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 13499,
+    "localUnits": 320
+   },
+   "HU12": {
+    "employees": 2464,
+    "localUnits": 172
+   },
+   "HU21": {
+    "employees": 300,
+    "localUnits": 88
+   },
+   "HU22": {
+    "employees": 504,
+    "localUnits": 83
+   },
+   "HU23": {
+    "employees": 583,
+    "localUnits": 70
+   },
+   "HU31": {
+    "employees": 264,
+    "localUnits": 105
+   },
+   "HU32": {
+    "employees": 368,
+    "localUnits": 90
+   },
+   "HU33": {
+    "employees": 399,
+    "localUnits": 122
+   }
+  }
+ },
+ "62": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 59712,
+    "localUnits": 13507
+   },
+   "HU12": {
+    "employees": 8860,
+    "localUnits": 5761
+   },
+   "HU21": {
+    "employees": 3695,
+    "localUnits": 2531
+   },
+   "HU22": {
+    "employees": 2914,
+    "localUnits": 1942
+   },
+   "HU23": {
+    "employees": 2761,
+    "localUnits": 1818
+   },
+   "HU31": {
+    "employees": 2123,
+    "localUnits": 1636
+   },
+   "HU32": {
+    "employees": 3529,
+    "localUnits": 2204
+   },
+   "HU33": {
+    "employees": 4351,
+    "localUnits": 2695
+   }
+  }
+ },
+ "63": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 12213,
+    "localUnits": 3027
+   },
+   "HU12": {
+    "employees": 1983,
+    "localUnits": 1181
+   },
+   "HU21": {
+    "employees": 637,
+    "localUnits": 544
+   },
+   "HU22": {
+    "employees": 584,
+    "localUnits": 475
+   },
+   "HU23": {
+    "employees": 534,
+    "localUnits": 401
+   },
+   "HU31": {
+    "employees": 476,
+    "localUnits": 404
+   },
+   "HU32": {
+    "employees": 830,
+    "localUnits": 577
+   },
+   "HU33": {
+    "employees": 751,
+    "localUnits": 591
+   }
+  }
+ },
+ "68": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 34513,
+    "localUnits": 16288
+   },
+   "HU12": {
+    "employees": 9268,
+    "localUnits": 4930
+   },
+   "HU21": {
+    "employees": 6325,
+    "localUnits": 2921
+   },
+   "HU22": {
+    "employees": 6737,
+    "localUnits": 3381
+   },
+   "HU23": {
+    "employees": 3985,
+    "localUnits": 2332
+   },
+   "HU31": {
+    "employees": 3758,
+    "localUnits": 1749
+   },
+   "HU32": {
+    "employees": 6143,
+    "localUnits": 2766
+   },
+   "HU33": {
+    "employees": 5129,
+    "localUnits": 2658
+   }
+  }
+ },
+ "69": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 40423,
+    "localUnits": 13997
+   },
+   "HU12": {
+    "employees": 7723,
+    "localUnits": 5056
+   },
+   "HU21": {
+    "employees": 5428,
+    "localUnits": 3391
+   },
+   "HU22": {
+    "employees": 5072,
+    "localUnits": 3115
+   },
+   "HU23": {
+    "employees": 4346,
+    "localUnits": 2706
+   },
+   "HU31": {
+    "employees": 4210,
+    "localUnits": 2704
+   },
+   "HU32": {
+    "employees": 6369,
+    "localUnits": 3731
+   },
+   "HU33": {
+    "employees": 6519,
+    "localUnits": 4036
+   }
+  }
+ },
+ "70": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 38920,
+    "localUnits": 18146
+   },
+   "HU12": {
+    "employees": 8784,
+    "localUnits": 6376
+   },
+   "HU21": {
+    "employees": 3726,
+    "localUnits": 2724
+   },
+   "HU22": {
+    "employees": 3244,
+    "localUnits": 2280
+   },
+   "HU23": {
+    "employees": 2796,
+    "localUnits": 2104
+   },
+   "HU31": {
+    "employees": 2501,
+    "localUnits": 1774
+   },
+   "HU32": {
+    "employees": 3371,
+    "localUnits": 2491
+   },
+   "HU33": {
+    "employees": 3839,
+    "localUnits": 2761
+   }
+  }
+ },
+ "71": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 26859,
+    "localUnits": 9603
+   },
+   "HU12": {
+    "employees": 8313,
+    "localUnits": 4672
+   },
+   "HU21": {
+    "employees": 5319,
+    "localUnits": 3203
+   },
+   "HU22": {
+    "employees": 6088,
+    "localUnits": 3055
+   },
+   "HU23": {
+    "employees": 3997,
+    "localUnits": 2531
+   },
+   "HU31": {
+    "employees": 3224,
+    "localUnits": 2103
+   },
+   "HU32": {
+    "employees": 5142,
+    "localUnits": 2872
+   },
+   "HU33": {
+    "employees": 5032,
+    "localUnits": 2895
+   }
+  }
+ },
+ "72": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 14262,
+    "localUnits": 1856
+   },
+   "HU12": {
+    "employees": 1213,
+    "localUnits": 505
+   },
+   "HU21": {
+    "employees": 543,
+    "localUnits": 316
+   },
+   "HU22": {
+    "employees": 547,
+    "localUnits": 277
+   },
+   "HU23": {
+    "employees": 819,
+    "localUnits": 301
+   },
+   "HU31": {
+    "employees": 403,
+    "localUnits": 223
+   },
+   "HU32": {
+    "employees": 621,
+    "localUnits": 426
+   },
+   "HU33": {
+    "employees": 1221,
+    "localUnits": 483
+   }
+  }
+ },
+ "73": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 10176,
+    "localUnits": 3968
+   },
+   "HU12": {
+    "employees": 2135,
+    "localUnits": 1402
+   },
+   "HU21": {
+    "employees": 1137,
+    "localUnits": 726
+   },
+   "HU22": {
+    "employees": 1033,
+    "localUnits": 736
+   },
+   "HU23": {
+    "employees": 804,
+    "localUnits": 604
+   },
+   "HU31": {
+    "employees": 620,
+    "localUnits": 472
+   },
+   "HU32": {
+    "employees": 1173,
+    "localUnits": 713
+   },
+   "HU33": {
+    "employees": 1184,
+    "localUnits": 836
+   }
+  }
+ },
+ "74": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 15371,
+    "localUnits": 9585
+   },
+   "HU12": {
+    "employees": 5540,
+    "localUnits": 4485
+   },
+   "HU21": {
+    "employees": 3585,
+    "localUnits": 2930
+   },
+   "HU22": {
+    "employees": 3504,
+    "localUnits": 2784
+   },
+   "HU23": {
+    "employees": 3032,
+    "localUnits": 2579
+   },
+   "HU31": {
+    "employees": 2562,
+    "localUnits": 2186
+   },
+   "HU32": {
+    "employees": 3482,
+    "localUnits": 2954
+   },
+   "HU33": {
+    "employees": 4371,
+    "localUnits": 3558
+   }
+  }
+ },
+ "75": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 791,
+    "localUnits": 284
+   },
+   "HU12": {
+    "employees": 651,
+    "localUnits": 254
+   },
+   "HU21": {
+    "employees": 322,
+    "localUnits": 177
+   },
+   "HU22": {
+    "employees": 314,
+    "localUnits": 174
+   },
+   "HU23": {
+    "employees": 258,
+    "localUnits": 137
+   },
+   "HU31": {
+    "employees": 235,
+    "localUnits": 140
+   },
+   "HU32": {
+    "employees": 425,
+    "localUnits": 238
+   },
+   "HU33": {
+    "employees": 335,
+    "localUnits": 211
+   }
+  }
+ },
+ "77": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 4653,
+    "localUnits": 1423
+   },
+   "HU12": {
+    "employees": 1841,
+    "localUnits": 861
+   },
+   "HU21": {
+    "employees": 999,
+    "localUnits": 603
+   },
+   "HU22": {
+    "employees": 964,
+    "localUnits": 574
+   },
+   "HU23": {
+    "employees": 737,
+    "localUnits": 415
+   },
+   "HU31": {
+    "employees": 718,
+    "localUnits": 391
+   },
+   "HU32": {
+    "employees": 1076,
+    "localUnits": 568
+   },
+   "HU33": {
+    "employees": 965,
+    "localUnits": 534
+   }
+  }
+ },
+ "78": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 22065,
+    "localUnits": 530
+   },
+   "HU12": {
+    "employees": 15916,
+    "localUnits": 232
+   },
+   "HU21": {
+    "employees": 7923,
+    "localUnits": 120
+   },
+   "HU22": {
+    "employees": 5055,
+    "localUnits": 106
+   },
+   "HU23": {
+    "employees": 1381,
+    "localUnits": 56
+   },
+   "HU31": {
+    "employees": 1655,
+    "localUnits": 78
+   },
+   "HU32": {
+    "employees": 3382,
+    "localUnits": 93
+   },
+   "HU33": {
+    "employees": 1087,
+    "localUnits": 62
+   }
+  }
+ },
+ "79": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 3692,
+    "localUnits": 1364
+   },
+   "HU12": {
+    "employees": 357,
+    "localUnits": 291
+   },
+   "HU21": {
+    "employees": 344,
+    "localUnits": 148
+   },
+   "HU22": {
+    "employees": 267,
+    "localUnits": 146
+   },
+   "HU23": {
+    "employees": 192,
+    "localUnits": 131
+   },
+   "HU31": {
+    "employees": 318,
+    "localUnits": 88
+   },
+   "HU32": {
+    "employees": 173,
+    "localUnits": 82
+   },
+   "HU33": {
+    "employees": 255,
+    "localUnits": 141
+   }
+  }
+ },
+ "80": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 17156,
+    "localUnits": 1074
+   },
+   "HU12": {
+    "employees": 6238,
+    "localUnits": 701
+   },
+   "HU21": {
+    "employees": 1391,
+    "localUnits": 570
+   },
+   "HU22": {
+    "employees": 1729,
+    "localUnits": 259
+   },
+   "HU23": {
+    "employees": 2145,
+    "localUnits": 412
+   },
+   "HU31": {
+    "employees": 942,
+    "localUnits": 479
+   },
+   "HU32": {
+    "employees": 2977,
+    "localUnits": 995
+   },
+   "HU33": {
+    "employees": 1194,
+    "localUnits": 391
+   }
+  }
+ },
+ "81": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 31227,
+    "localUnits": 5534
+   },
+   "HU12": {
+    "employees": 8815,
+    "localUnits": 3148
+   },
+   "HU21": {
+    "employees": 5324,
+    "localUnits": 2410
+   },
+   "HU22": {
+    "employees": 4250,
+    "localUnits": 1626
+   },
+   "HU23": {
+    "employees": 3672,
+    "localUnits": 1495
+   },
+   "HU31": {
+    "employees": 8214,
+    "localUnits": 1147
+   },
+   "HU32": {
+    "employees": 5184,
+    "localUnits": 1833
+   },
+   "HU33": {
+    "employees": 3998,
+    "localUnits": 1539
+   }
+  }
+ },
+ "82": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 19830,
+    "localUnits": 7619
+   },
+   "HU12": {
+    "employees": 7967,
+    "localUnits": 3791
+   },
+   "HU21": {
+    "employees": 4366,
+    "localUnits": 2030
+   },
+   "HU22": {
+    "employees": 3471,
+    "localUnits": 1814
+   },
+   "HU23": {
+    "employees": 2978,
+    "localUnits": 1422
+   },
+   "HU31": {
+    "employees": 2639,
+    "localUnits": 1559
+   },
+   "HU32": {
+    "employees": 4957,
+    "localUnits": 1977
+   },
+   "HU33": {
+    "employees": 3651,
+    "localUnits": 2014
+   }
+  }
+ },
+ "95": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 3525,
+    "localUnits": 1680
+   },
+   "HU12": {
+    "employees": 1778,
+    "localUnits": 1087
+   },
+   "HU21": {
+    "employees": 1079,
+    "localUnits": 873
+   },
+   "HU22": {
+    "employees": 1238,
+    "localUnits": 873
+   },
+   "HU23": {
+    "employees": 821,
+    "localUnits": 642
+   },
+   "HU31": {
+    "employees": 715,
+    "localUnits": 552
+   },
+   "HU32": {
+    "employees": 1305,
+    "localUnits": 1058
+   },
+   "HU33": {
+    "employees": 1090,
+    "localUnits": 879
+   }
+  }
+ },
+ "08": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 448,
+    "localUnits": 37
+   },
+   "HU12": {
+    "employees": 722,
+    "localUnits": 37
+   },
+   "HU21": {
+    "employees": 913,
+    "localUnits": 48
+   },
+   "HU22": {
+    "employees": 451,
+    "localUnits": 69
+   },
+   "HU23": {
+    "employees": 43,
+    "localUnits": 16
+   },
+   "HU31": {
+    "employees": 307,
+    "localUnits": 41
+   },
+   "HU32": {
+    "employees": 160,
+    "localUnits": 21
+   },
+   "HU33": {
+    "employees": 78,
+    "localUnits": 26
+   }
+  }
+ },
+ "09": {
+  "year": 2020,
+  "regions": {
+   "HU11": {
+    "employees": 189,
+    "localUnits": 14
+   },
+   "HU12": {
+    "employees": 100,
+    "localUnits": 3
+   },
+   "HU21": {
+    "employees": 23,
+    "localUnits": 8
+   },
+   "HU22": {
+    "employees": 67,
+    "localUnits": 4
+   },
+   "HU23": {
+    "employees": 110,
+    "localUnits": 10
+   },
+   "HU31": {
+    "employees": 25,
+    "localUnits": 10
+   },
+   "HU32": {
+    "employees": 133,
+    "localUnits": 9
+   },
+   "HU33": {
+    "employees": 42,
+    "localUnits": 6
+   }
+  }
+ }
+}

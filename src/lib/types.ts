@@ -72,6 +72,9 @@ export interface Region {
   nuts: string;
   share: number; // % of industry revenue
   businessShare: number;
+  /** "eurostat": share of persons employed / local units (real); "placeholder": share of revenue / businesses */
+  source?: "eurostat" | "placeholder";
+  year?: number;
 }
 
 export type Level = "Low" | "Moderate" | "High" | "Growth" | "Mature" | "Decline";
@@ -137,3 +140,6 @@ export type EurostatSnapshot = Record<
     >
   >
 >;
+
+/** division code -> latest year with a full NUTS-2 breakdown (Eurostat sbs_r_nuts06_r2) */
+export type RegionSnapshot = Record<string, { year: number; regions: Record<string, { employees: number; localUnits: number }> }>;

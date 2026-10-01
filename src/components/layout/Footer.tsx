@@ -15,7 +15,7 @@ export function Footer() {
           <Link className="block hover:underline" href="/about/">About</Link>
         </div>
         <p className="text-muted">
-          Demonstration build: figures marked &ldquo;Estimate&rdquo; are placeholder values, not real market data.
+          Revenue, employment, businesses, wages and profit are derived from Eurostat structural business statistics (EUR converted to HUF); regional splits are Eurostat NUTS-2 data. Figures marked &ldquo;Estimate&rdquo; (forecasts, product and market splits, cost mix) are modelled placeholders.
           Company names are fictional.
         </p>
       </div>

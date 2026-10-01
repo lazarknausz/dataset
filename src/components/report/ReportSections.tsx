@@ -167,15 +167,20 @@ export function ProductsSection({ r }: { r: IndustryReport }) {
 }
 
 export function GeographySection({ r }: { r: IndustryReport }) {
+  const real = r.regions[0].source === "eurostat";
+  const [shareLabel, bizLabel] = real ? ["Employment", "Local units"] : ["Revenue", "Businesses"];
   return (
     <section>
       <Head id="geography" />
-      <Card title="Share by NUTS-2 region">
+      <Card
+        title="Share by NUTS-2 region"
+        action={<SourceBadge source={real ? "eurostat" : "placeholder"} year={real ? r.regions[0].year : undefined} />}
+      >
         <RegionBars regions={r.regions} />
         <details className="mt-4 text-sm">
           <summary className="cursor-pointer font-semibold text-accent">View as table</summary>
           <table className="mt-3 w-full text-left">
-            <thead><tr className="border-b border-line text-muted"><th className="py-2">Region</th><th>NUTS</th><th className="text-right">Revenue</th><th className="text-right">Businesses</th></tr></thead>
+            <thead><tr className="border-b border-line text-muted"><th className="py-2">Region</th><th>NUTS</th><th className="text-right">{shareLabel}</th><th className="text-right">{bizLabel}</th></tr></thead>
             <tbody>{r.regions.map((g) => <tr key={g.nuts} className="border-b border-line"><td className="py-2">{g.name}</td><td>{g.nuts}</td><td className="text-right">{g.share.toFixed(1)}%</td><td className="text-right">{g.businessShare.toFixed(1)}%</td></tr>)}</tbody>
           </table>
         </details>

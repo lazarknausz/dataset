@@ -10,11 +10,13 @@
  */
 import { writeFileSync } from "node:fs";
 import { DIVISIONS } from "../src/data/divisions";
-import type { EurostatSnapshot } from "../src/lib/types";
-import { collect, eurostatNace, findIndicators, indicatorDim, rates, type JsonStat } from "./eurostat-parse";
+import type { EurostatSnapshot, RegionSnapshot } from "../src/lib/types";
+import { collect, decode, eurostatNace, findIndicators, indicatorDim, rates, type JsonStat } from "./eurostat-parse";
 
 const BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data";
 const OUT = new URL("../src/data/generated/eurostat-hu.json", import.meta.url);
+const OUT_REGIONS = new URL("../src/data/generated/eurostat-hu-regions.json", import.meta.url);
+const NUTS2 = ["HU11", "HU12", "HU21", "HU22", "HU23", "HU31", "HU32", "HU33"];
 const DATASETS = ["sbs_ovw_act", "sbs_na_sca_r2"]; // 2021+ and 2008–2020
 
 async function get(dataset: string, query: string): Promise<JsonStat> {
@@ -24,7 +26,29 @@ async function get(dataset: string, query: string): Promise<JsonStat> {
   return (await res.json()) as JsonStat;
 }
 
+/** Latest year per division with persons employed + local units for every NUTS-2 region (sbs_r_nuts06_r2, 2008–2020). */
+async function fetchRegions(): Promise<RegionSnapshot> {
+  const js = await get("sbs_r_nuts06_r2", `geo=${NUTS2.join("&geo=")}&indic_sb=V16110&indic_sb=V11210`);
+  const byNace: Record<string, Record<string, Record<string, Record<string, number>>>> = {}; // nace -> year -> nuts -> metric -> value
+  for (const c of decode(js)) {
+    const metric = c.coords.indic_sb === "V16110" ? "employees" : "localUnits";
+    (((byNace[c.coords.nace_r2] ??= {})[c.coords.time] ??= {})[c.coords.geo] ??= {})[metric] = c.value;
+  }
+  const out: RegionSnapshot = {};
+  for (const d of DIVISIONS) {
+    const years = byNace[eurostatNace(d.code, d.section)];
+    if (!years) continue;
+    const complete = Object.keys(years).sort().reverse().find((y) =>
+      NUTS2.every((n) => years[y][n]?.employees !== undefined && years[y][n]?.localUnits !== undefined) &&
+      NUTS2.reduce((a, n) => a + years[y][n].employees, 0) > 0 && NUTS2.reduce((a, n) => a + years[y][n].localUnits, 0) > 0);
+    if (!complete) continue;
+    out[d.code] = { year: +complete, regions: Object.fromEntries(NUTS2.map((n) => [n, { employees: years[complete][n].employees, localUnits: years[complete][n].localUnits }])) };
+  }
+  return out;
+}
+
 async function main() {
+  const regions = await fetchRegions();
   const snapshot: EurostatSnapshot = {};
   const fx = (await get("ert_bil_eur_a", "currency=HUF&statinfo=AVG")) as JsonStat;
   const eurHuf = rates(fx);
@@ -64,7 +88,8 @@ async function main() {
 
   for (const k of Object.keys(snapshot)) if (!Object.keys(snapshot[k]).length) delete snapshot[k];
   writeFileSync(OUT, JSON.stringify(snapshot, null, 1) + "\n");
-  console.log(`Wrote ${Object.keys(snapshot).length} divisions to ${OUT.pathname}`);
+  writeFileSync(OUT_REGIONS, JSON.stringify(regions, null, 1) + "\n");
+  console.log(`Wrote ${Object.keys(snapshot).length} divisions to ${OUT.pathname} and ${Object.keys(regions).length} regional breakdowns`);
 }
 
 main().catch((err) => {
