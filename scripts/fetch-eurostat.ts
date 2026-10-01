@@ -11,7 +11,7 @@
 import { writeFileSync } from "node:fs";
 import { DIVISIONS } from "../src/data/divisions";
 import type { EurostatSnapshot } from "../src/lib/types";
-import { collect, eurostatNace, findIndicators, rates, type JsonStat } from "./eurostat-parse";
+import { collect, eurostatNace, findIndicators, indicatorDim, rates, type JsonStat } from "./eurostat-parse";
 
 const BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data";
 const OUT = new URL("../src/data/generated/eurostat-hu.json", import.meta.url);
@@ -35,8 +35,11 @@ async function main() {
     const ind = findIndicators(probe);
     console.log(`${dataset}: indicators`, ind);
 
+    const dim = indicatorDim(probe);
+    const missing = Object.entries(ind).filter(([, c]) => !c).map(([k]) => k);
+    if (missing.length || Object.keys(ind).length < 5) throw new Error(`${dataset}: no indicator matched for ${missing.join(", ")}`);
     const pull = async (code: string | undefined, unit: string[]) =>
-      code ? collect(await get(dataset, `geo=HU&indic_sb=${code}`), { unit }) : {};
+      code ? collect(await get(dataset, `geo=HU&${dim}=${code}`), { unit }) : {};
     const [ent, turn, emp, pers, va] = await Promise.all([
       pull(ind.enterprises, ["NR"]), pull(ind.turnover, ["MIO_EUR"]), pull(ind.employees, ["NR"]),
       pull(ind.personnelCosts, ["MIO_EUR"]), pull(ind.valueAdded, ["MIO_EUR"]),

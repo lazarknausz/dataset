@@ -6,7 +6,7 @@ const mock: JsonStat = {
   size: [1, 1, 1, 2, 1, 2],
   dimension: {
     freq: { category: { index: { A: 0 } } },
-    indic_sb: { category: { index: { V12110: 0 }, label: { V12110: "Turnover", V11110: "Number of enterprises" } } },
+    indic_sb: { category: { index: { V12110: 0 }, label: { V12110: "Turnover or gross premiums written - million euro", V11110: "Enterprises - number", V91100: "Turnover per person employed - thousand euro" } } },
     unit: { category: { index: { MIO_EUR: 0 } } },
     nace_r2: { category: { index: { C10: 0, C11: 1 } } },
     geo: { category: { index: { HU: 0 } } },
@@ -29,6 +29,12 @@ describe("eurostat parsing", () => {
 
   it("finds indicator codes by label", () => {
     expect(findIndicators(mock)).toMatchObject({ turnover: "V12110", enterprises: "V11110" });
+  });
+
+  it("finds indicators under the 2021+ indic_sbs dimension", () => {
+    const labels = { ENT_NR: "Enterprises - number", EMP_NR: "Persons employed - number", SAL_NR: "Employees - number", NETTUR_MEUR: "Net turnover - million euro", NETTUR_EMP_TEUR: "Net turnover per person employed - thousand euro", AV_MEUR: "Value added - million euro", EXPN_SAL_BEN_MEUR: "Employee benefits expense - million euro" };
+    const js: JsonStat = { id: ["indic_sbs"], size: [1], dimension: { indic_sbs: { category: { index: { ENT_NR: 0 }, label: labels } } }, value: [1] };
+    expect(findIndicators(js)).toEqual({ enterprises: "ENT_NR", turnover: "NETTUR_MEUR", employees: "EMP_NR", personnelCosts: "EXPN_SAL_BEN_MEUR", valueAdded: "AV_MEUR" });
   });
 
   it("extracts HUF rates", () => {
